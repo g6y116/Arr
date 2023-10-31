@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+    <dimen name="margin_icon">10dp</dimen>
+
+    <dimen name="padding_small">8dp</dimen>
+    <dimen name="padding_medium">16dp</dimen>
+    <dimen name="padding_large">24dp</dimen>
+
+    <dimen name="text_size_small">11dp</dimen>
+    <dimen name="text_size_medium">12dp</dimen>
+    <dimen name="text_size_large">14dp</dimen>
+
+    <dimen name="item_height">64dp</dimen>
+
+    <dimen name="btn_width">64dp</dimen>
+    <dimen name="btn_height">24dp</dimen>
+
+    <dimen name="tg_width">48dp</dimen>
+    <dimen name="tg_height">32dp</dimen>
+
+    <dimen name="line_group">8dp</dimen>
+    <dimen name="line_item">1dp</dimen>
+
+    <dimen name="header_size">48dp</dimen>
+    <dimen name="ic_size">24dp</dimen>
+</resources>

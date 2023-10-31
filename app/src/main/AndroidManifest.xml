@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <queries>
+        <package android:name="com.kakao.talk" />
+        <package android:name="kr.co.samsungcard.mpocket" />
+        <package android:name="com.shcard.smartpay" />
+        <package android:name="com.shinhancard.smartshinhan" />
+        <package android:name="com.kbcard.cxh.appcard" />
+        <package android:name="com.kbstar.liivbank" />
+        <package android:name="kvp.jjy.MispAndroid320" />
+        <package android:name="com.hanaskcard.paycla" />
+        <package android:name="kr.co.hanamembers.hmscustomer" />
+        <package android:name="com.lcacApp" />
+        <package android:name="nh.smart.nhallonepay" />
+        <package android:name="com.hyundaicard.appcard" />
+        <package android:name="kr.co.citibank.citimobile" />
+        <package android:name="com.samsung.android.spay" />
+        <package android:name="com.ssg.serviceapp.android.egiftcertificate" />
+        <package android:name="viva.republica.toss" />
+        <package android:name="com.nhnent.payapp" />
+        <package android:name="com.nhn.android.search" />
+        <package android:name="com.lottemembers.android" />
+        <package android:name="com.kftc.bankpay.android" />
+        <package android:name="com.nh.cashcardapp" />
+        <package android:name="kr.co.kfcc.mobilebank" />
+        <package android:name="com.knb.psb" />
+        <package android:name="com.kftc.bankpay.android" />
+        <package android:name="com.tmoney.inapp" />
+        <package android:name="com.tmoney.nfc_pay" />
+        <package android:name="com.mysmilepay.app" />
+        <package android:name="com.hanaskcard.rocomo.potal" />
+        <package android:name="com.lumensoft.touchenappfree" />
+        <package android:name="com.sktelecom.tauth" />
+        <package android:name="com.kt.ktauth" />
+        <package android:name="com.lguplus.smartotp" />
+        <package android:name="com.TouchEn.mVaccine.webs" />
+        <package android:name="com.ahnlab.v3mobileplus" />
+        <package android:name="kr.co.shiftworks.vguardweb" />
+    </queries>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+<!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />-->
+<!--    <uses-permission android:name="android.permission.USE_BIOMETRIC" />-->
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <application
+        android:name=".base.AppApplication"
+        android:label="${appName}"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:allowBackup="false"
+        android:usesCleartextTraffic="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity
+            android:name=".view.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

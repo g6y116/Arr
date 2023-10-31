@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- use -->
+    <color name="white">#FFFFFFFF</color>
+    <color name="black">#FF000000</color>
+    <color name="text_color">#FF333333</color>
+    <color name="text_sub_color">#7E7E7E</color>
+    <color name="bg_color">#FFF8F8F8</color>
+    <color name="line_color">#FFF8F8F8</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="ripple">#20000000</color>
+    <color name="icon">#646F7C</color>
+    <color name="disable">#999999</color>
+    <color name="enable">#242424</color>
+
+    <color name="dialog_bg">#80333333</color>
+
+    <color name="colorPrimaryDark">#f7702e</color>
+    <color name="colorPrimary">#ff7600</color>
+</resources>
