@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!--    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">-->
+<!--        <item name="android:background">@drawable/img_logo</item>-->
+<!--    </style>-->
+
+    <style name = "NoActionBar" parent = "@android:style/Theme.Holo.Light">
+        <item name = "android:windowActionBar">false</item>
+        <item name = "android:windowNoTitle">true</item>
+    </style>
+
+<!--    <style name="tab_text" parent="TextAppearance.Design.Tab">-->
+<!--        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>-->
+<!--        <item name="android:textStyle">normal</item>-->
+<!--        <item name="android:textColor">@color/dimColor</item>-->
+<!--        <item name="android:textSize">15dp</item>-->
+<!--    </style>-->
+
+    <style name="text_tab" parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">16dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <!-- activity_setting.xml -->
+    <style name="text_view_label">
+        <item name="android:textSize">15dp</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_view_item">
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:textColor">@color/text_color</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_view_sub_item">
+        <item name="android:layout_marginStart">14dp</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:textColor">@color/text_sub_color</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_regular</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="text_view_button">
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:textSize">@dimen/text_size_medium</item>
+        <item name="android:textColor">@color/text_sub_color</item>
+        <item name="android:fontFamily">@font/noto_sans_kr_medium</item>
+        <item name="android:background">@drawable/bg_round_btn</item>
+        <item name="android:gravity">center</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    <style name="image_view_toggle">
+        <item name="android:layout_marginEnd">14dp</item>
+        <item name="android:background">@drawable/selector_toggle</item>
+    </style>
+</resources>

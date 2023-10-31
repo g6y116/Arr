@@ -41,22 +41,21 @@
     </queries>
 
     <uses-permission android:name="android.permission.INTERNET" />
-<!--    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />-->
-<!--    <uses-permission android:name="android.permission.USE_BIOMETRIC" />-->
+    <!-- <uses-permission android:name="android.permission.POST_NOTIFICATIONS" /> -->
+    <!-- <uses-permission android:name="android.permission.USE_BIOMETRIC" /> -->
     <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:name=".base.AppApplication"
-        android:label="${appName}"
-        android:icon="@mipmap/ic_launcher"
-        android:roundIcon="@mipmap/ic_launcher_round"
         android:allowBackup="false"
-        android:usesCleartextTraffic="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="${appName}"
+        android:roundIcon="@mipmap/ic_launcher_round_01"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
         <activity
             android:name=".view.MainActivity"
             android:exported="true"
@@ -64,10 +63,20 @@
             android:windowSoftInputMode="stateHidden|adjustResize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            <intent-filter>
+                <!-- 나중에 호스트 바꿔주세요. -->
+                <data android:host="m.thebanchan.co.kr" android:scheme="https" />
+                <data android:host="m.thebanchan.co.kr" android:scheme="http" />
+            </intent-filter>
         </activity>
+
+        <activity
+            android:name=".view.SettingActivity"
+            android:exported="false"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
     </application>
 
 </manifest>

@@ -28,7 +28,6 @@ interface WebViewListener {
     fun onShowFileChooser(filePathCallback: ValueCallback<Array<Uri>>?, fileChooserParams: WebChromeClient.FileChooserParams?)
     fun onSwipeDown()
     fun onSwipeUp()
-    fun nowScroll(nowY: Int, percent: Int)
 }
 
 class CustomWebView (
@@ -89,14 +88,6 @@ class CustomWebView (
                 return false
             }
         })
-
-        // event - banner
-        setOnScrollChangeListener { view, x, y, oldX, oldY ->
-            val allY = computeVerticalScrollRange() - computeVerticalScrollExtent()
-            val nowY = computeVerticalScrollOffset()
-            val nowPercent = (nowY.toDouble() * 100 / allY.toDouble()).toInt()
-            mWebViewListener?.nowScroll(nowY, nowPercent)
-        }
     }
 
     override fun onCheckIsTextEditor() = true

@@ -10,7 +10,7 @@ import java.util.Locale
 import java.util.TimeZone
 
 fun log(message: String) {
-    Log.d("log", message)
+    Log.d("@@@", message)
 }
 
 fun toast(context: Context, message: Int) {
